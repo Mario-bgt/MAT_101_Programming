@@ -10,7 +10,7 @@ def index_of_t(L, t):
         if t == L[i]:
             j = i
         i = i + 1
-    return  j
+    return j
 
 
 L = [1, 2, 3, 4, 'dog', 2.3]
