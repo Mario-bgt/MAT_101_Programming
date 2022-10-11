@@ -30,7 +30,7 @@ def factorial(num):
     result = 1  # defining the output variable
 
     # multiply result with every integer between "num" and 0
-    while num >= 10:
+    while num > 0:
         result = result * num
         num = num - 1
 
@@ -60,7 +60,7 @@ def sum_list(array):
     result = 0
 
     # calculating the sum over "array"
-    for index in range(1, len(array)):
+    for index in range(0, len(array)):
         # getting the next element in the list
         element = array[index]
 
