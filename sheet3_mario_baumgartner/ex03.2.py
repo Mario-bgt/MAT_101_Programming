@@ -39,11 +39,3 @@ def better_power(base, exponent):
         for i in range(abs(exponent) - 1):
             res = res * base
         return 1/res
-
-
-print(power(2.5, 4), 2.5**4)
-for i in range(8):
-    for j in range(8):
-        print(power(i, j), i**j)
-
-
