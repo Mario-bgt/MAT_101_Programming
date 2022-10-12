@@ -20,7 +20,7 @@ def find_idx_of_t(L, t):
 
 
 L = [1, 2, 5, 7, 2, 88, 2, 69, 0, 34, 'Cat', 'Dog', True, 3, 3.56, 9]
-t = 3.56
+t = 2
 
 idx = find_idx_of_t(L, t)
 print(idx)

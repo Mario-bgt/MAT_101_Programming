@@ -29,6 +29,8 @@ def better_power(base, exponent):
         print("Parameter 'exponent' has value '" + str(exponent) + "' and parameter 'base' hase value 0. "
                                                                    "This combination of parameters is not valid")
         return None
+    if exponent == 0:
+        return 1
     if exponent >= 0:
         res = base
         for i in range(exponent-1):
@@ -39,3 +41,4 @@ def better_power(base, exponent):
         for i in range(abs(exponent) - 1):
             res = res * base
         return 1/res
+

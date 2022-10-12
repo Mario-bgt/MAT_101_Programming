@@ -65,4 +65,5 @@ def days_between(start, end):
     return res
 
 
-print(days_between([25, 12, 2022], [4, 1, 2023]))
+if __name__ == '__main__':
+    print(days_between([25, 12, 2022], [4, 1, 2023]))
