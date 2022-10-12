@@ -33,7 +33,25 @@ def days_since_new_year(date):
 
 
 def days_between(start, end):
-    start_year = start[2]
+    """
+    :param start:
+        list [day, month, year]
+    :param end:
+        list [day, month, year]
+    :return:
+        int, amount of days between start and end
+    """
+    start_year = start[2]+1
     end_year = end[2]
-    
-    return None
+    res = 0
+    while start_year < end_year:
+        if is_leap_year(start_year):
+            res += 366
+            start_year += 1
+        else:
+            res += 365
+            start_year += 1
+    if is_leap_year(start[2]) and days_since_new_year([start[0:2]]) > 59:
+        res = res + 1 +
+
+    return res
