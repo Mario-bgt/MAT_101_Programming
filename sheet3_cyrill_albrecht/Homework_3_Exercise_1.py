@@ -88,11 +88,13 @@ print(sum_list(correctlyst2))
 # These examples are wrong without the correction
 L = [0, 1, 2, 3, 4, 5]
 for i in L:
-    print(i, factorial(i), factorial(i))
+    print(i, factorial(i), factorial(i))  # here all numbers under 10 wouldn't be counted to the factorial because
+    # they would not get in the while loop
 
-lyst1 = [1, 2, 3, 4]
-lyst2 = [4, 1, 6, 200]
-lyst3 = [5, 'dog', 3]
+lyst1 = [1, 2, 3, 4]  # output: 9 instead of 10
+lyst2 = [4, 1, 6, 200]  # output: 207 instead of 211
+lyst3 = [5, 'dog', 3]  # output 3 instead of 8
+# for each example the first element wouldn't get counted
 print(sum_list(lyst1), sum(lyst1))
 print(sum_list(lyst2), sum(lyst2))
 print(sum_list(lyst3))
