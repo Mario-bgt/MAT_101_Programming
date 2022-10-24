@@ -1,5 +1,6 @@
 def isPalindrome(arg):
-    if type(arg) is not str and not int:
+    print(type(arg))
+    if type(arg) is not str and type(arg) is not int:
         print("Parameter 'arg' as value '" + str(arg) + "' of type "
               + str(type(arg)) + " but should be of type int or string.")
         return None
@@ -11,3 +12,5 @@ def isPalindrome(arg):
 
 
 print(isPalindrome('Lager-regal'))
+print(isPalindrome(0.34))
+print(isPalindrome(1337331))
