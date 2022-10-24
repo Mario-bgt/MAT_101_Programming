@@ -66,4 +66,4 @@ def days_between(start, end):
 
 
 if __name__ == '__main__':
-    print(days_between([25, 12, 2022], [4, 1, 2023]))
+    print(days_between([7, 7, 2022], [16, 10, 2022]))
