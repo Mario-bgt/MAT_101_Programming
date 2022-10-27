@@ -64,3 +64,6 @@ for number in range(1, 10 ** 5, 1000):
     if best_time[0] > (end - start):
         best_time = (end - start, 'sum(range(1, N + 1))', res)
     print(f"To calculate {number} the best option is {best_time[1]}, with just {best_time[0]} nanoseconds, coming to {best_time[2]} as the result")
+
+
+print(f"As observed the option to use gauss_summation(N) is always the best choice!!")
