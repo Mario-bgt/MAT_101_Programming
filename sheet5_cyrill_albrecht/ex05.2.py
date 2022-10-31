@@ -1,6 +1,6 @@
 # Exercise 2a
 def quadratic_formula(a, b, c):
-    root = (b ** 2) - 4 * a * c
+    root = abs(b ** 2) - 4 * a * c
     sqrt = root ** 0.5
     if root > 0:
         return [(-b + sqrt) / (2 * a), (-b - sqrt) / (2 * a)]
@@ -26,3 +26,4 @@ def quadratic_formula2(a, c):
 def quadratic_formula3(a, b):
     return [0, -b / a]
 
+print(quadratic_formula(1,0,1))
