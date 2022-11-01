@@ -1,5 +1,6 @@
 from time import perf_counter_ns as t
 
+
 # Part a)
 def fibonacci_recursive(n):
     if n == 0:
@@ -50,10 +51,8 @@ while True:
     fib1 = fibonacci_iterative(n)
     fib2 = fibonacci_iterative(n + 1)
     if fib2 / fib1 == (1 + 5 ** .5) / 2:
-        print(n+1)
+        print(n + 1)
         break
     n += 1
 
-
 # Part f)
-
