@@ -51,8 +51,24 @@ while True:
     fib1 = fibonacci_iterative(n)
     fib2 = fibonacci_iterative(n + 1)
     if fib2 / fib1 == (1 + 5 ** .5) / 2:
-        print(n + 1)
+        print(f"It took {n + 1} fibonacci numbers till F_n/F_n-1 is according to python equal to the golden ratio")
         break
     n += 1
 
 # Part f)
+counter = 0
+
+
+def fibonacci_recursive_counter(n):
+    global counter
+    counter += 1
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    else:
+        return fibonacci_recursive_counter(n - 1) + fibonacci_recursive_counter(n - 2)
+
+
+print(fibonacci_recursive_counter(10), counter)
+
