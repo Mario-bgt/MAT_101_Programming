@@ -56,11 +56,11 @@ while True:
     n += 1
 
 # Part f)
-counter = 0
+i = 0
 
 
 def fibonacci_recursive_counter(n):
-    global counter
+    global i
     counter += 1
     if n == 0:
         return 0
@@ -70,5 +70,5 @@ def fibonacci_recursive_counter(n):
         return fibonacci_recursive_counter(n - 1) + fibonacci_recursive_counter(n - 2)
 
 
-print(fibonacci_recursive_counter(10), counter)
+print(fibonacci_recursive_counter(10), i)
 
