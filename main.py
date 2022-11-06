@@ -36,5 +36,5 @@ def marios_theorem(number):
     print(f'We arrived at the 1, 2, 4 loop after {n} loops for the number {beggin}')
 
 
-for i in np.linspace(1, 1000,1001):
+for i in np.linspace(1, 1000, 1001):
     marios_theorem(int(i))
