@@ -45,11 +45,12 @@ while True:
     n = n + 1
 
 i = 0
-
+count_lyst=[]
 
 def fibonacci_recursive_counter(n):
     global i
     i += 1
+    count_lyst.append(1)
     if n == 0:
         return 0
     if n == 1:
@@ -58,4 +59,4 @@ def fibonacci_recursive_counter(n):
         return fibonacci_recursive_counter(n - 1) + fibonacci_recursive_counter(n - 2)
 
 
-print(fibonacci_recursive_counter(10), i)
+print(fibonacci_recursive_counter(10), len(count_lyst), i)
