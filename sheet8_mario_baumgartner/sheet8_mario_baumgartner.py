@@ -11,8 +11,9 @@ def fibonacciMatrix(n):
 
 
 fib_101 = fibonacciMatrix(101)
-
-print(f"The value for 101 is {fib_101} which is simply wrong. ")
+print(f"Exersice 1)")
+print(f"The value for 101 is {fib_101} which is simply wrong. I assume there was something wrong with multiplying the "
+      f"matrix n times with itself.\n")
 
 """Exersice 2"""
 
@@ -27,7 +28,8 @@ def monteCarloPi(n):
     return (m / n) * 4
 
 
-print(monteCarloPi(10000))
+print(f"Exersice 2) a)")
+print(f"With 100'000 random values I found that Pi is approximately {monteCarloPi(100000)}")
 
 
 # Part b)
@@ -45,8 +47,9 @@ vol_4 = monteCarloSphere(10000, 4)
 vol_10 = monteCarloSphere(10000, 10)
 vol_100 = monteCarloSphere(10000, 100)
 vol_300 = monteCarloSphere(10000, 300)
+print(f"Exersice 2) b)")
 print(f"The volume of dimension 3 = {vol_3}, 4 = {vol_4}, 10 = {vol_10}, 100 = {vol_100}, 300 = {vol_300} ")
-print(f"As expected the volume for dim 4 is the greatest and then decreases to 0 for dim getting bigger.")
+print(f"As expected the volume for dim 4 is the greatest and then decreases to 0 for dim getting bigger.\n")
 
 """Exersice 3"""
 
@@ -65,4 +68,5 @@ def sieveOfEratosthenes(n):
         primes.append(p)
 
 
-print(sieveOfEratosthenes(30))
+print(f"Exersice 3)")
+print(f"The prime numbers in the first 100 digits are {sieveOfEratosthenes(100)}")
