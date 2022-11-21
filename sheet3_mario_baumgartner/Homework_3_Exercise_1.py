@@ -4,32 +4,32 @@ import math
 
 def factorial(num):
     """
-    Returns the factorial of "num".
+    Returns the factorial of "n".
 
-    Prints a warning and returns None if "num" is negative or not an int.
+    Prints a warning and returns None if "n" is negative or not an int.
 
     Input:
-        num: int
+        n: int
 
     Output:
         result: int
     """
-    # making sure "num" is an int
+    # making sure "n" is an int
     if type(num) is not int:
-        print("Parameter 'num' as value '" + str(num)
+        print("Parameter 'n' as value '" + str(num)
               + "' of type " + str(type(num)) + " but should be of type int.")
         return None
 
-    # making sure "num" is positive
+    # making sure "n" is positive
     if num < 0:
-        print("Parameter 'num' as value '" + str(num)
+        print("Parameter 'n' as value '" + str(num)
               + "' but should be positive.")
         return None
 
-    # preceeding to calculate num!
+    # preceeding to calculate n!
     result = 1  # defining the output variable
 
-    # multiply result with every integer between "num" and 0
+    # multiply result with every integer between "n" and 0
     while num > 0:
         result = result * num
         num = num - 1
