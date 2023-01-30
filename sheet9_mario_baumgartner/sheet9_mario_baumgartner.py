@@ -96,5 +96,3 @@ def plot_subplots_advanced(x_min, x_max, grid, function):
 
 
 plot_subplots_advanced(0.1, 10, True, np.cos)
-
-
