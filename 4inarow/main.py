@@ -24,18 +24,8 @@ game_over = False
 # Main game loop
 while not game_over:
     if all_full():
-        font = pygame.font.Font(None, 72)
-        text = font.render("It's a tie!", True, GREEN)
-        text_rect = text.get_rect()
-        text_x = screen.get_width() / 2 - text_rect.width / 2
-        text_y = screen.get_height() / 2 - text_rect.height / 2
-        screen.blit(text, [text_x, text_y])
-        pygame.display.update()
-        # Wait for the user to close the window
-        while True:
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    sys.exit()
+        player = 0
+        game_over = True
     else:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -68,6 +58,8 @@ while not game_over:
 font = pygame.font.Font(None, 72)
 if player == 1:
     text = font.render("Yellow wins!", True, YELLOW)
+elif player == 0:
+    text = font.render("It's a tie!", True, GREEN)
 else:
     text = font.render("Red wins!", True, RED)
 text_rect = text.get_rect()
