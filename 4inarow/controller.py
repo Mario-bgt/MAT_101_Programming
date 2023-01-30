@@ -101,8 +101,8 @@ def check_for_win(row, col):
             count += 1
         else:
             break
-    if count == 4:
-        return True
+        if count == 4:
+            return True
 
     # Check negative diagonal
     count = 0
