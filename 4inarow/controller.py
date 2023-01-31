@@ -13,8 +13,8 @@ YELLOW = (255, 255, 102)
 GREEN = (0, 255, 0)
 BLACK = (0, 0, 0)
 BACKGROUND_COLOR = (0, 0, 255)
-ANIMATION_SPEED = 5
-FPS = 60
+ANIMATION_SPEED = 2
+FPS = 240
 # Initialize pygame
 pygame.init()
 
